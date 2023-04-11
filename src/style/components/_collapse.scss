@@ -1,0 +1,76 @@
+.About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  cursor: pointer;
+  &__box {
+    @media screen and (max-width: $breakpoint-desktop) {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__collapse {
+    width: 1023px;
+  }
+  &__title {
+    padding: 0 1%;
+    background: $color-1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+  }
+  & h2 {
+    @include font(24px, 500);
+    color: white;
+    @media screen and (max-width: $breakpoint-desktop) {
+      @include font(13px, 500);
+      padding: 1%;
+    }
+  }
+  &__content {
+    @include font(24px, 400);
+    color: $color-1;
+    background: #f7f7f7;
+    border-radius: 5px;
+    @media screen and (max-width: $breakpoint-desktop) {
+      @include font(12px, 400);
+    }
+    p {
+      padding: 2%;
+    }
+    &__show {
+      opacity: 1;
+      height: auto;
+      max-height: 9999px;
+      transition: all 0.5s 0.4s ease-in-out;
+    }
+    &__hidden {
+      opacity: 0;
+      transition: all 0.5s 0.4s ease-in-out;
+      overflow: hidden;
+      max-height: 0;
+    }
+  }
+}
+
+.fleche {
+  align-self: center;
+  height: 100%;
+  transform: rotate(180deg);
+  transition: 0.4s ease-in-out;
+  @media screen and (max-width: $breakpoint-desktop) {
+    height: 10px;
+  }
+}
+
+.fleche-open {
+  align-self: center;
+  height: 100%;
+  transform: rotate(0deg);
+  transition: 0.4s 0.4s ease-in-out;
+  @media screen and (max-width: $breakpoint-desktop) {
+    height: 10px;
+  }
+}

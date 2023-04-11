@@ -1,0 +1,11 @@
+.star {
+  padding: 2%;
+  @media screen and (max-width: $breakpoint-desktop) {
+    height: 20px;
+  }
+}
+.star_box {
+  @media screen and (max-width: $breakpoint-desktop) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+.host-name {
+  @include font(18px, 500);
+  color: $color-1;
+  text-align: right;
+  width: 50%;
+  @media screen and (max-width: $breakpoint-desktop) {
+    @include font(12px, 500);
+  }
+}
+.host-pic {
+  display: flex;
+  margin-left: 10px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  @media screen and (max-width: $breakpoint-desktop) {
+    width: 32px;
+    height: 32px;
+  }
+  & img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+.hostbox {
+  display: flex;
+  padding-bottom: 20px;
+  align-content: flex-end;
+}

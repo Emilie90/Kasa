@@ -1,0 +1,17 @@
+.Nav {
+  @include flex-end;
+  a {
+    text-decoration: none;
+    padding: 10px;
+    color: $color-1;
+    font-size: 24px;
+    @media screen and (max-width: $breakpoint-desktop) {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+  }
+
+  .nav-active {
+    text-decoration-line: underline;
+  }
+}

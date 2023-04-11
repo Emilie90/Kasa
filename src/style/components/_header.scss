@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3% 5%;
+
+  & .logo {
+    @media screen and (max-width: $breakpoint-desktop) {
+      width: 30%;
+    }
+  }
+}
