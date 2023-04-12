@@ -3,8 +3,7 @@
   margin: 5px auto;
   height: 223px;
   border-radius: 25px;
-  background-image: linear-gradient(rgba(31, 31, 31, 0.5), rgba(0, 0, 0, 0.3)),
-    url("../../images/IMG.svg");
+  background-image: $background-banner;
   background-size: cover;
   background-position: center;
   margin-bottom: 50px;

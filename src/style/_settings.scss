@@ -9,12 +9,13 @@ $breakpoint-desktop: 769px;
 $w-min: 375px;
 $w-max: 768px;
 $background-color: #e5e5e5;
-
-$breakpoint-desktop: 769px;
-
-$wmin: 375px;
-$wmax: 768px;
-
+$background-aboutbanner: linear-gradient(
+    rgba(31, 31, 31, 0.5),
+    rgba(0, 0, 0, 0.3)
+  ),
+  url("../../images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png");
+$background-banner: linear-gradient(rgba(31, 31, 31, 0.5), rgba(0, 0, 0, 0.3)),
+  url("../../images/IMG.svg");
 @mixin flex-end {
   display: flex;
   align-items: center;
@@ -45,7 +46,7 @@ body {
   background: $white;
   font-family: $font;
   margin: auto;
-  min-width: $wmin;
+  min-width: $w-min;
 }
 
 .Home {

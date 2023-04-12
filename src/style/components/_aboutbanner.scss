@@ -4,18 +4,12 @@
   height: 223px;
   left: 100px;
   top: 152px;
-  background: linear-gradient(rgba(31, 31, 31, 0.5), rgba(0, 0, 0, 0.3)),
-    url("../../images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.svg");
+  background: $background-aboutbanner;
   background-size: cover;
   background-position: center;
   margin-bottom: 50px;
   @media screen and (max-width: $breakpoint-desktop) {
-    background: linear-gradient(rgba(31, 31, 31, 0.5), rgba(0, 0, 0, 0.3)),
-      url("../../images/gustavo-alves-YOXSC4zRcxw-unsplash 1.png");
-    width: 336px;
-    height: 223px;
     margin-top: 20px;
-    background-repeat: no-repeat;
   }
 }
 

@@ -26,7 +26,6 @@
   }
 }
 .hostbox {
-  display: flex;
+  @include flex-end;
   padding-bottom: 20px;
-  align-content: flex-end;
 }
