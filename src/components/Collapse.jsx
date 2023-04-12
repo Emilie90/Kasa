@@ -20,7 +20,12 @@ const Collapse = (props) => {
         <div
           className={open ? "About__content__show" : "About__content__hidden"}
         >
-          <p aria-hidden={open ? "true" : "false"}>{props.Text}</p>
+          <div
+            className="About__content__p"
+            aria-hidden={open ? "true" : "false"}
+          >
+            {props.Text}
+          </div>
         </div>
       </div>
     </div>

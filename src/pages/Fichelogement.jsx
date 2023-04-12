@@ -13,13 +13,13 @@ export default function FicheLogement() {
   const navigate = useNavigate();
   const [selectedAppart, setSelectedAppart] = useState();
   useEffect(() => {
+    const id = params.id;
     const selected = data.find((appart) => appart.id === id);
-    console.log(selected);
     data.map(() => setSelectedAppart(selected));
     if (selected === undefined) {
       navigate("/404");
     }
-  }, []);
+  }, [navigate, params.id]);
 
   const slidePics = selectedAppart && selectedAppart.pictures;
   const description = selectedAppart && selectedAppart.description;
