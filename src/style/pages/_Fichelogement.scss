@@ -2,6 +2,9 @@
   @include font(36px, 500);
   line-height: 51.34px;
   color: $color-1;
+  @media screen and (max-width: $breakpoint-desktop) {
+    @include font(18px, 500);
+  }
 }
 
 .Appart-location {
