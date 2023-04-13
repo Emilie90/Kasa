@@ -25,7 +25,6 @@ export default function FicheLogement() {
   const description = selectedAppart && selectedAppart.description;
   const equipments = selectedAppart && selectedAppart.equipments;
   const tags = selectedAppart && selectedAppart.tags;
-  console.log(equipments);
   return (
     selectedAppart && (
       <div key={id} className="Home">
