@@ -4,8 +4,7 @@ import Collapse from "../components/Collapse";
 export default function About() {
   return (
     <div className="pageAbout">
-      {" "}
-      <div className="About_banner_box">
+      <div className="About__banner_box">
         <Banner />
       </div>
       <div className="About">
