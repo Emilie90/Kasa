@@ -24,3 +24,26 @@
     }
   }
 }
+
+.About_banner_box {
+  margin: 5px auto;
+  border-radius: 25px;
+  height: 223px;
+  left: 100px;
+  top: 152px;
+  background: $background-aboutbanner;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
+  & h1 {
+    opacity: 0;
+  }
+  @media screen and (max-width: $breakpoint-desktop) {
+    margin-top: 20px;
+  }
+}
+
+.pageAbout {
+  padding-bottom: 10%;
+  margin: 5%;
+}

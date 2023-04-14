@@ -1,10 +1,13 @@
-import Aboutbanner from "../components/Aboutbanner";
+import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 
 export default function About() {
   return (
     <div className="pageAbout">
-      <Aboutbanner />
+      {" "}
+      <div className="About_banner_box">
+        <Banner />
+      </div>
       <div className="About">
         <div className="About__collapse">
           {about.map((item, i) => (

@@ -15,9 +15,6 @@ const Carrousel = ({ slides }) => {
     setCurrentIndex(newIndex);
   };
 
-  // const slideStylesWidthBackground = {
-  //   backgroundImage: `url(${slides.pictures})`,
-  // };
   return (
     <div className="sliderStyles">
       <div>
