@@ -25,7 +25,7 @@ const Carrousel = ({ slides }) => {
         )}
         {slides.length > 1 && (
           <div onClick={goToNext} className="rightArrowStyles">
-            <img src={ArrowR} alt="fleche_gauche" />
+            <img src={ArrowR} alt="fleche_droite" />
           </div>
         )}
       </div>
